@@ -1,0 +1,75 @@
+.card{
+    background-color: #222b3d;
+}
+
+.card:hover{
+    background-color: #1d2433;
+}
+
+.input-search{
+    background-color: #232c3b;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    outline: none;
+    padding: 7px 22px;
+    border: 2px solid #232c3b;
+    transition: 0.2s all;
+}
+
+.input-search:focus{
+    border: 2px solid #3298dc;
+    transition: 0.2s all;
+}
+
+.btn:active, .btn:focus{
+    box-shadow: none;
+}
+
+.command-box{
+    border-radius: 12px !important;
+    padding: 8px 18px !important;
+}
+
+.command-title{
+    font-size: 1.2rem;
+    position: relative;
+    top: 2px;
+}
+
+.command-descreption{
+    color: rgb(184, 184, 184);
+    margin-left: 3%
+}
+
+.btn-command-ca{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.btn-command-ca:hover{
+    color: #fff;
+    background-color: #3298dc;
+}
+
+.btn-command-active{
+    background-color: #3298dc;
+}
+
+::placeholder {
+    color: rgb(221, 221, 221);
+    opacity: 1;
+    font-size: 1rem;
+  }
+  
+  :-ms-input-placeholder {
+    color: rgb(221, 221, 221);
+    font-size: 1rem;
+  }
+  
+  ::-ms-input-placeholder {
+    color: rgb(221, 221, 221);
+     font-size: 1rem;
+  }

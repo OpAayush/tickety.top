@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Configuration -->
+    <meta charset="utf-8">
+    <title>Tickety | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Tickety Bot">
+    <meta name="description"
+        content="The perfect and most customizable ticket bot for your server! Manage tickets easier than ever!">
+    <meta name="keywords"
+        content="Tickety, Ticket Bot, Ticket Tool, discord bot, bots, top.gg, tickety dashboard, dashboard, tickety, ticket bot, tickets, ticket system, disboard, discord, bot discord, fivem ticket bot, ticket bot discord">
+
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Frameworks -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/maindashstyle.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/loading.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BCGX3W1R28"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BCGX3W1R28');
+    </script>
+</head>
+
+<body>
+    <div id="dslo">
+        <span class="up1"></span>
+        <span class="up2"></span>
+        <span class="up3"></span>
+        <span class="up4"></span>
+        <span class="up5"></span>
+    </div>
+
+    <div id="loading-Dash" hidden>
+                <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light mt-4">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light fw-bold" href="index.html"><img class="position-relative logo-nav"
+                        src="assets/logo.png" width="60px" height="60px"> &nbsp; Tickety</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i style="color: #fff; font-size: 1.5rem;" class="far fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                    <div class="d-flex">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active-home text-light" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="commands.html">Commands</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link text-light" href="invite.html" target="_blank">Invite</a>
+                            </li>
+                            <li class="nav-item mr-3 d-flex">
+                                <img src="assets/crown.png" width="23px" height="23px" class="navbar-crown"> <a class="nav-link text-light" href="premium.html" >Premium</a>
+                            </li>
+                            
+                                    <a href="login.html"><button class="btn btn-primary btn-login">Login</button></a>
+                                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+        <div class="container">
+            <section>
+                <div class="row">
+                    <div class="col-md-6 mt-5 my-1">
+                        <h1 class="main-title">Tickety</h1>
+                        <p class="title-descreption">Create tickets in a way you've never seen it before!</p>
+                        <a href="invite.html" target="_blank"><button class="btn btn-primary btn-invite my-2">Invite
+                                Tickety</button></a>
+                        <a href="dashboard.html"><button class="btn btn-primary btn-dashboard my-2">Dashboard</button></a>
+                    </div>
+                    <div class="col-md-6 align-items-center d-flex my-1">
+                        <img class="img-fluid " hidden src="assets/mainimage.svg">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h1 class="main-title text-center">Features</h1>
+                <p class="features-descreption text-center">What make us special?</p>
+                <center>
+                    <div class="main-features mt-5 my-4">
+                        <div class="row my-2">
+                            <div class="col-md-4 my-2">
+                                <div class="card feature-box ul-bx p-3">
+                                    <h4 class="feature-title ul-ti"><i class="fal fa-ticket-alt"></i> Unlimited Tickets
+                                    </h4>
+                                    <p class="mt-2 feature-descreption w-75">With tickety there isn't a ticket limit.
+                                        <br>
+                                        Create tickets with no limit!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-2">
+                                <div class="card feature-box p-3 cu-bx">
+                                    <h4 class="feature-title cu-ti"><i class="fal fa-boxes"></i> Fully Customizable
+                                    </h4>
+                                    <p class="mt-2 feature-descreption w-75">On our dashboard you can change every
+                                        aspect of
+                                        tickety.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-2">
+                                <div class="card feature-box p-3 tr-bx">
+                                    <h4 class="feature-title tr-ti"><i class="fal fa-clipboard"></i> Transcripts</h4>
+                                    <p class="mt-2 feature-descreption w-75">When you close a ticket a HTML transcript
+                                        will
+                                        be created for free.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 my-2">
+                                <div class="card feature-box on-bx p-3">
+                                    <h4 class="feature-title on-ti"><i class="fal fa-clock"></i> 24/7 online</h4>
+                                    <p class="mt-2 feature-descreption w-75">Our bot is always online.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-2">
+                                <div class="card feature-box sp-bx p-3">
+                                    <h4 class="feature-title sp-ti"><i class="fal fa-life-ring"></i> Support</h4>
+                                    <p class="mt-2 feature-descreption w-75">We have a support discord where you can ask
+                                        everything about tickety.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-2">
+                                <div class="card feature-box sf-bx p-3">
+                                    <h4 class="feature-title sf-ti"><i class="fal fa-lock"></i> Safe</h4>
+                                    <p class="mt-2 feature-descreption">All our data is stored in an encrypted database
+                                        so
+                                        all your data is safe.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+            </section>
+
+            <section>
+                <div class="row my-5">
+                    <div class="col-md-6 my-2">
+                        <center>
+                            <div class="row">
+                                <div class="col-sm-6 my-1">
+                                    <div class="card stats-card cr-ti">
+                                        <div class="row">
+                                            <div class="col-sm-3 my-2">
+                                                <i class="far fa-ticket-alt ti-lg ti-color"></i>
+                                            </div>
+                                            <div class="col-sm-8 my-2">
+                                                <div class="stats-descreption float-end">
+                                                    <span class="fw-bold d-block stats-t">Created Tickets</span>
+                                                    <span class="d-block stats-num">
+                                                        613,005
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 my-1">
+                                    <div class="card stats-card st-ti">
+                                        <div class="row">
+                                            <div class="col-sm-3 my-2">
+                                                <i class="far fa-envelope ti-lg mi-color"></i>
+                                            </div>
+                                            <div class="col-sm-8 my-2">
+                                                <div class="stats-descreption float-end">
+                                                    <span class="fw-bold d-block stats-t">Closed Tickets</span>
+                                                    <span class="d-block stats-num">
+                                                        554,021
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 my-1">
+                                    <div class="card stats-card us-ti">
+                                        <div class="row">
+                                            <div class="col-sm-5 my-2">
+                                                <i class="fas fa-user ti-lg us-color"></i>
+                                            </div>
+                                            <div class="col-sm-7 my-2">
+                                                <div class="stats-descreption float-start">
+                                                    <span class="fw-bold d-block stats-t">Total Users</span>
+                                                    <span class="d-block stats-num">
+                                                        4,313,765
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 my-1">
+                                    <div class="card stats-card sr-ti">
+                                        <div class="row">
+                                            <div class="col-sm-5 my-2">
+                                                <i class="far fa-server ti-lg sr-color"></i>
+                                            </div>
+                                            <div class="col-sm-7 my-2">
+                                                <div class="stats-descreption float-start">
+                                                    <span class="fw-bold d-block stats-t">Total Servers</span>
+                                                    <span class="d-block stats-num">
+                                                        15,234
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <h4 class="static-title">Statistics</h4>
+                        <p class="w-75 statics-descreption">
+                            Tickety is widely used and trusted by many users. We have been growing vigorously since we
+                            began, and we strive to offer the best ticket tool for Discord.
+                            <br><br>
+                            Do like several others, and invite Tickety to make it easier handling tickets. Give your
+                            Discord
+                            server users a good experience dealing with support.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="row premium-row">
+                    <div class="col-md-4 my-2">
+                        <div class="card box-free p-5">
+                            <h3 class="text-center fw-bold">FREE</h3>
+                            <p class="text-center mt-4 feature"><i class="fal fa-check-circle"></i> Unlimited Tickets
+                            </p>
+                            <p class="text-center feature"><i class="fal fa-check-circle"></i> Support</p>
+                            <p class="text-center feature"><i class="fal fa-check-circle"></i> Always online</p>
+                            <p class="text-center feature"><i class="fal fa-times-circle"></i> Customize everything</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 my-2">
+                        <div class="card box-premium p-3">
+                            <h3 class="text-center fw-bold mt-4">PREMIUM</h3>
+                            <p class="text-center mt-4 feature"><i class="fal fa-check-circle"></i> Unlimited Tickets
+                            </p>
+                            <p class="text-center feature"><i class="fal fa-check-circle"></i> Support</p>
+                            <p class="text-center feature"><i class="fal fa-check-circle"></i> Always online</p>
+                            <p class="text-center feature"><i class="fal fa-check-circle"></i> Custom emojis</p>
+                            <p class="text-center feature"><i class="fal fa-check-circle"></i> Customize everything</p>
+                            <p class="text-center feature"><i class="fal fa-check-circle"></i> Exclusive discord role
+                            </p>
+                            <a href="premium.html"><button class="btn btn-primary p-2 premium-link">GET
+                                    PREMIUM</button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 my-2">
+                    <img src="assets/tickety&#32;rounded.png" class="rounded position-relative image-footer" width="120px"
+                        height="120px">
+                    <span class="d-block fw-bold text-light mt-3">© 2022 All Rights Reserved</span>
+                </div>
+                <div class="col-lg-6 my-2">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h5 class="links-title">Website Pages</h5>
+                            <ul class="list-unstyled">
+                                <a href="index.html#" class="text-decoration-none link-page">
+                                    <li>Home</li>
+                                </a>
+                                <a href="commands.html" class="text-decoration-none link-page">
+                                    <li>Commands</li>
+                                </a>
+                                <a href="dashboard.html" class="text-decoration-none link-page">
+                                    <li>Dashboard</li>
+                                </a>
+                                <a href="premium.html" class="text-decoration-none link-page">
+                                    <li>Premium</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5 class="links-title">Other Links</h5>
+                            <ul class="list-unstyled">
+                                <a href="vote.html" target="_blank" class="text-decoration-none link-page">
+                                    <li>Vote</li>
+                                </a>
+                                <a href="support.html" target="_blank" class="text-decoration-none link-page">
+                                    <li>Support Discord</li>
+                                </a>
+                                <a href="mc-node.html" target="_blank" class="text-decoration-none link-page">
+                                    <li>MC-Node</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5 class="links-title">Terms &amp; Privacy</h5>
+                            <ul class="list-unstyled">
+                                <a href="terms-of-service.html" class="text-decoration-none link-page">
+                                    <li>Terms Of Service</li>
+                                </a>
+                                <a href="privacy-policy.html" class="text-decoration-none link-page">
+                                    <li>Privacy Policy</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <h3 class="ready-to text-light">Ready to use Tickety?</h3>
+                    <p class="footer-descreption">Tickety is the best bot that will manage your tickets for
+                        free.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <a href="invite.html"><button class="btn btn-primary float-end button-footer">Add
+                            Tickety</button></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script>
+        const loading1 = document.getElementById('dslo')
+        const bd1 = document.getElementById('loading-Dash')
+
+        setTimeout(function () {
+            bd1.removeAttribute("hidden", "")
+            loading1.style.display = 'none';
+        }, 1500);
+    </script>
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

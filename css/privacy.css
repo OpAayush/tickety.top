@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #151b25;
+}
+
+a, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
+.privacy-box {
+  background-color: #1e2633;
+  color: #fff;
+  border-radius: 7px;
+}
+
+.privacy-box p {
+  color: rgb(194, 197, 206);
+}
+
+.privacy-box h3 {
+  margin-top: 2rem;
+}
+
+.privacy-box h2 {
+  margin-top: 2rem;
+}
+
+footer {
+  margin-top: 8%;
+  background-color: #1c2331;
+}
+
+.image-footer {
+  left: 3rem;
+}
+
+.button-footer {
+  padding: 12px 4rem;
+}
+
+.footer-descreption {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.links-title {
+  color: #3298dc;
+}
+
+.link-page {
+  font-weight: 600;
+  font-size: 18px;
+  color: #798797;
+  transition: 0.2s all;
+}
+
+.link-page:hover {
+  color: rgb(216, 216, 216);
+  transition: 0.2s all;
+}
+
+.container li {
+color: rgb(194, 197, 206);
+}
+
+.ready-to {
+  color: #fff;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: rgb(206, 206, 206);
+  border: 0;
+  opacity: 0.25;
+}
+
+.footer-descreption {
+  color: #798797;
+}
+
+@media screen and (max-width: 700px) {
+  .static-title,
+  .statics-descreption {
+    text-align: center !important;
+    margin-top: 4rem;
+  }
+  .statics-descreption {
+    margin-left: 3.5rem;
+  }
+   .container {
+    width: 90% !important;
+  }
+}

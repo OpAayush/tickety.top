@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Configuration -->
+    <meta charset="utf-8">
+    <title>Tickety | Commands</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Frameworks -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/maindashstyle.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/commands.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BCGX3W1R28"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BCGX3W1R28');
+    </script>
+</head>
+
+<body>
+            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light mt-4">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light fw-bold" href="index.html"><img class="position-relative logo-nav"
+                        src="assets/logo.png" width="60px" height="60px"> &nbsp; Tickety</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i style="color: #fff; font-size: 1.5rem;" class="far fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                    <div class="d-flex">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active-home text-light" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="commands.html">Commands</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link text-light" href="invite.html" target="_blank">Invite</a>
+                            </li>
+                            <li class="nav-item mr-3 d-flex">
+                                <img src="assets/crown.png" width="23px" height="23px" class="navbar-crown"> <a class="nav-link text-light" href="premium.html" >Premium</a>
+                            </li>
+                            
+                                    <a href="login.html"><button class="btn btn-primary btn-login">Login</button></a>
+                                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section style="margin-top: 6%;">
+            <div class="row">
+                <div class="col-md-3 my-2 p-2">
+                    <div class="card p-3">
+                        <h4 class="text-center">All Commands</h4>
+                        
+                            <button class="btn btn-command-ca my-1 m-1" id="general"
+                                onclick="loadCategory('general')">
+                                General
+                            </button>
+                            
+                            <button class="btn btn-command-ca my-1 m-1" id="ticket"
+                                onclick="loadCategory('ticket')">
+                                Ticket
+                            </button>
+                            
+                            <button class="btn btn-command-ca my-1 m-1" id="admin"
+                                onclick="loadCategory('admin')">
+                                Admin
+                            </button>
+                            
+                            <button class="btn btn-command-ca my-1 m-1" id="info"
+                                onclick="loadCategory('info')">
+                                Info
+                            </button>
+                            
+                    </div>
+                </div>
+                
+                    <div class="col-md-9 my-2" id="generalSection" hidden>
+                        <input type="text" oninput="search(this.value)" class="input-search w-100 my-2 mt-2"
+                            placeholder="Search for command">
+                        
+                            <div class="card command-box  mt-2 my-2" id="helpCommand">
+                                <h5 class="text-light command-title">
+                                    help<span class="command-descreption">
+                                            Get a list of commands and useful links.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="setlogchannelCommand">
+                                <h5 class="text-light command-title">
+                                    setlogchannel<span class="command-descreption">
+                                            Set a channel to be used as logchannel.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="settranscriptchannelCommand">
+                                <h5 class="text-light command-title">
+                                    settranscriptchannel<span class="command-descreption">
+                                            Set a channel to be used as transcript channel.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="setupCommand">
+                                <h5 class="text-light command-title">
+                                    setup<span class="command-descreption">
+                                            A way to easily set the bot up in 1 command.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="supportroleCommand">
+                                <h5 class="text-light command-title">
+                                    supportrole<span class="command-descreption">
+                                            Set a role to be used as general supportrole.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="languageCommand">
+                                <h5 class="text-light command-title">
+                                    language<span class="command-descreption">
+                                            Change the language tickety is displayed in.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col-md-9 my-2" id="ticketSection" hidden>
+                        <input type="text" oninput="search(this.value)" class="input-search w-100 my-2 mt-2"
+                            placeholder="Search for command">
+                        
+                            <div class="card command-box  mt-2 my-2" id="addCommand">
+                                <h5 class="text-light command-title">
+                                    add<span class="command-descreption">
+                                            Add a user to your current ticket.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="closeCommand">
+                                <h5 class="text-light command-title">
+                                    close<span class="command-descreption">
+                                            Close the ticket you are currently in.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="newCommand">
+                                <h5 class="text-light command-title">
+                                    new<span class="command-descreption">
+                                            Create a new ticket.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="removeCommand">
+                                <h5 class="text-light command-title">
+                                    remove<span class="command-descreption">
+                                            Remove a user from your current ticket.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="renameCommand">
+                                <h5 class="text-light command-title">
+                                    rename<span class="command-descreption">
+                                            Rename your current ticket.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="ticketpurgeCommand">
+                                <h5 class="text-light command-title">
+                                    ticketpurge<span class="command-descreption">
+                                            Purge an amount of messages in a ticket.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="transcriptCommand">
+                                <h5 class="text-light command-title">
+                                    transcript<span class="command-descreption">
+                                            Create a free transcript of the ticket you are currently in.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="claimCommand">
+                                <h5 class="text-light command-title">
+                                    claim<span class="command-descreption">
+                                            Claim a ticket.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="unclaimCommand">
+                                <h5 class="text-light command-title">
+                                    unclaim<span class="command-descreption">
+                                            Unclaim a ticket.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col-md-9 my-2" id="adminSection" hidden>
+                        <input type="text" oninput="search(this.value)" class="input-search w-100 my-2 mt-2"
+                            placeholder="Search for command">
+                        
+                            <div class="card command-box  mt-2 my-2" id="blacklistCommand">
+                                <h5 class="text-light command-title">
+                                    blacklist<span class="command-descreption">
+                                            Blacklist a user from creating tickets.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="unblacklistCommand">
+                                <h5 class="text-light command-title">
+                                    unblacklist<span class="command-descreption">
+                                            Remove the blacklist from a user and allow them to create tickets again.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="ticketembedCommand">
+                                <h5 class="text-light command-title">
+                                    ticketembed<span class="command-descreption">
+                                            Create a ticket open message in the channel your are currently in.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="resetCommand">
+                                <h5 class="text-light command-title">
+                                    reset<span class="command-descreption">
+                                            Reset tickety completely in your server.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                    </div>
+                    
+                    <div class="col-md-9 my-2" id="infoSection" hidden>
+                        <input type="text" oninput="search(this.value)" class="input-search w-100 my-2 mt-2"
+                            placeholder="Search for command">
+                        
+                            <div class="card command-box  mt-2 my-2" id="botinfoCommand">
+                                <h5 class="text-light command-title">
+                                    botinfo<span class="command-descreption">
+                                            Get the bot statistics.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="dashboardCommand">
+                                <h5 class="text-light command-title">
+                                    dashboard<span class="command-descreption">
+                                            Get a link to our dashboard.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="inviteCommand">
+                                <h5 class="text-light command-title">
+                                    invite<span class="command-descreption">
+                                            Get an invite link to invite me to your Discord servers.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="voteCommand">
+                                <h5 class="text-light command-title">
+                                    vote<span class="command-descreption">
+                                            Get a vote link to vote on me.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="serverinfoCommand">
+                                <h5 class="text-light command-title">
+                                    serverinfo<span class="command-descreption">
+                                            View basic information about this server.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="sponsorCommand">
+                                <h5 class="text-light command-title">
+                                    sponsor<span class="command-descreption">
+                                            Get a list of sponsors of Tickety.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="supportCommand">
+                                <h5 class="text-light command-title">
+                                    support<span class="command-descreption">
+                                            Get an invite to the support server of Tickety.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                            <div class="card command-box  mt-2 my-2" id="userinfoCommand">
+                                <h5 class="text-light command-title">
+                                    userinfo<span class="command-descreption">
+                                            View your or someone else&#39;s information.
+                                        </span>
+                                </h5>
+                            </div>
+                            
+                    </div>
+                    
+            </div>
+        </section>
+        <input id="array" value="[{&#34;name&#34;:&#34;General&#34;,&#34;commands&#34;:[{&#34;name&#34;:&#34;help&#34;,&#34;description&#34;:&#34;Get a list of commands and useful links.&#34;},{&#34;name&#34;:&#34;setlogchannel&#34;,&#34;description&#34;:&#34;Set a channel to be used as logchannel.&#34;},{&#34;name&#34;:&#34;settranscriptchannel&#34;,&#34;description&#34;:&#34;Set a channel to be used as transcript channel.&#34;},{&#34;name&#34;:&#34;setup&#34;,&#34;description&#34;:&#34;A way to easily set the bot up in 1 command.&#34;},{&#34;name&#34;:&#34;supportrole&#34;,&#34;description&#34;:&#34;Set a role to be used as general supportrole.&#34;},{&#34;name&#34;:&#34;language&#34;,&#34;description&#34;:&#34;Change the language tickety is displayed in.&#34;}]},{&#34;name&#34;:&#34;Ticket&#34;,&#34;commands&#34;:[{&#34;name&#34;:&#34;add&#34;,&#34;description&#34;:&#34;Add a user to your current ticket.&#34;},{&#34;name&#34;:&#34;close&#34;,&#34;description&#34;:&#34;Close the ticket you are currently in.&#34;},{&#34;name&#34;:&#34;new&#34;,&#34;description&#34;:&#34;Create a new ticket.&#34;},{&#34;name&#34;:&#34;remove&#34;,&#34;description&#34;:&#34;Remove a user from your current ticket.&#34;},{&#34;name&#34;:&#34;rename&#34;,&#34;description&#34;:&#34;Rename your current ticket.&#34;},{&#34;name&#34;:&#34;ticketpurge&#34;,&#34;description&#34;:&#34;Purge an amount of messages in a ticket.&#34;},{&#34;name&#34;:&#34;transcript&#34;,&#34;description&#34;:&#34;Create a free transcript of the ticket you are currently in.&#34;},{&#34;name&#34;:&#34;claim&#34;,&#34;description&#34;:&#34;Claim a ticket.&#34;},{&#34;name&#34;:&#34;unclaim&#34;,&#34;description&#34;:&#34;Unclaim a ticket.&#34;}]},{&#34;name&#34;:&#34;Admin&#34;,&#34;commands&#34;:[{&#34;name&#34;:&#34;blacklist&#34;,&#34;description&#34;:&#34;Blacklist a user from creating tickets.&#34;},{&#34;name&#34;:&#34;unblacklist&#34;,&#34;description&#34;:&#34;Remove the blacklist from a user and allow them to create tickets again.&#34;},{&#34;name&#34;:&#34;ticketembed&#34;,&#34;description&#34;:&#34;Create a ticket open message in the channel your are currently in.&#34;},{&#34;name&#34;:&#34;reset&#34;,&#34;description&#34;:&#34;Reset tickety completely in your server.&#34;}]},{&#34;name&#34;:&#34;Info&#34;,&#34;commands&#34;:[{&#34;name&#34;:&#34;botinfo&#34;,&#34;description&#34;:&#34;Get the bot statistics.&#34;},{&#34;name&#34;:&#34;dashboard&#34;,&#34;description&#34;:&#34;Get a link to our dashboard.&#34;},{&#34;name&#34;:&#34;invite&#34;,&#34;description&#34;:&#34;Get an invite link to invite me to your Discord servers.&#34;},{&#34;name&#34;:&#34;vote&#34;,&#34;description&#34;:&#34;Get a vote link to vote on me.&#34;},{&#34;name&#34;:&#34;serverinfo&#34;,&#34;description&#34;:&#34;View basic information about this server.&#34;},{&#34;name&#34;:&#34;sponsor&#34;,&#34;description&#34;:&#34;Get a list of sponsors of Tickety.&#34;},{&#34;name&#34;:&#34;support&#34;,&#34;description&#34;:&#34;Get an invite to the support server of Tickety.&#34;},{&#34;name&#34;:&#34;userinfo&#34;,&#34;description&#34;:&#34;View your or someone else&#39;s information.&#34;}]}]" hidden>
+    </div>
+    <script>
+        let selected = "";
+        function loadCategory(arg) {
+            selected = arg;
+            let temp;
+            let temp2;
+        
+                temp = document.getElementById("general");
+                temp2 = document.getElementById("generalSection");
+                temp.classList.remove("onActivate");
+                temp2.setAttribute("hidden", "");
+        
+                temp = document.getElementById("ticket");
+                temp2 = document.getElementById("ticketSection");
+                temp.classList.remove("onActivate");
+                temp2.setAttribute("hidden", "");
+        
+                temp = document.getElementById("admin");
+                temp2 = document.getElementById("adminSection");
+                temp.classList.remove("onActivate");
+                temp2.setAttribute("hidden", "");
+        
+                temp = document.getElementById("info");
+                temp2 = document.getElementById("infoSection");
+                temp.classList.remove("onActivate");
+                temp2.setAttribute("hidden", "");
+        
+        var elm = document.getElementById(arg + "Section");
+            var btn = document.getElementById(arg);
+            elm.removeAttribute("hidden");
+            btn.classList.add("onActivate");
+        }
+
+        function search(value) {
+            let commands = JSON.parse(document.getElementById("array").value);
+            let selectedcategorydata = commands.filter(category => category.name.toLowerCase() == selected);
+            let cmds = selectedcategorydata[0].commands.filter(cmd => cmd.name.toLowerCase().includes(value.toLowerCase()));
+            let cmdsElements = [];
+            cmds.forEach(cmd => {
+                cmdsElements.push(document.getElementById(cmd.name.toLowerCase() + "Command"))
+            })
+            selectedcategorydata[0].commands.forEach(cmd => {
+                document.getElementById(cmd.name.toLowerCase() + "Command").setAttribute("hidden", "");
+            })
+            cmdsElements.forEach(elm => {
+                elm.removeAttribute("hidden");
+            })
+        }
+        loadCategory("general");
+        search("");
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>
